@@ -13,10 +13,6 @@
       "enabled": false
     },
     {
-      "matchFileNames": [
-        "apps/laboratory/package.json",
-        "package-lock.json"
-      ],
       "matchPackageNames": [
         "@walletconnect/utils",
         "wagmi",
@@ -29,5 +25,6 @@
       "enabled": true,
       "prPriority": 10
     }
-  ]
+  ],
+  "includePaths": ["apps/laboratory"]
 }
