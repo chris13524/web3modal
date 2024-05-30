@@ -13,7 +13,10 @@
       "enabled": false
     },
     {
-      "matchFileNames": ["apps/laboratory/package.json"],
+      "matchFileNames": [
+        "apps/laboratory/package.json",
+        "apps/laboratory/package-lock.json"
+      ],
       "matchPackageNames": [
         "@walletconnect/utils",
         "wagmi",
