@@ -15,7 +15,7 @@
     {
       "matchFileNames": [
         "apps/laboratory/package.json",
-        "apps/laboratory/package-lock.json"
+        "package-lock.json"
       ],
       "matchPackageNames": [
         "@walletconnect/utils",
