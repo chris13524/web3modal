@@ -25,6 +25,5 @@
       "enabled": true,
       "prPriority": 10
     }
-  ],
-  "includePaths": ["apps/laboratory/package.json"]
+  ]
 }
