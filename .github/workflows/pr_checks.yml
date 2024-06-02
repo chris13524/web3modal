@@ -21,7 +21,7 @@ jobs:
     if: github.event.action == 'opened' || github.event.action == 'synchronize'
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
       - name: setup-node
         uses: actions/setup-node@v3
         with:
@@ -49,7 +49,7 @@ jobs:
           - danger
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
       - name: setup-node
         uses: actions/setup-node@v3
         with:
@@ -72,7 +72,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
       - name: setup-node
         uses: actions/setup-node@v3
         with:
