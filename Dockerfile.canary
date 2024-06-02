@@ -1,4 +1,4 @@
-FROM node:20-bookworm
+FROM node:20-bookworm@sha256:ab71b9da5ba19445dc5bb76bf99c218941db2c4d70ff4de4e0d9ec90920bfe3f
 RUN apt update && apt install -y awscli
 
 WORKDIR /src

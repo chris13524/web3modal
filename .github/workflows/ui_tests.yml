@@ -53,12 +53,12 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
         with:
           repository: WalletConnect/web3modal
           ref: ${{ inputs.branch }}
       - name: setup-node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # v3
         with:
           node-version: 18.x
           cache: 'npm'
@@ -70,7 +70,7 @@ jobs:
         working-directory: ./apps/laboratory/
         run: sudo ./scripts/install-brave-browser.sh
       - name: Cache playwright binaries
-        uses: actions/cache@v4
+        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4
         id: playwright-cache
         with:
           path: |
@@ -111,13 +111,13 @@ jobs:
           CI: true
         working-directory: ./apps/laboratory/
         run: npm run playwright:test:canary
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32 # v3
         if: always()
         with:
           name: playwright-report
           path: ./apps/laboratory/playwright-report/
           retention-days: 7
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32 # v3
         if: always()
         with:
           name: screenshots
