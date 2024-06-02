@@ -7,8 +7,11 @@
     ":semanticCommits",
     ":semanticCommitScope(deps)"
   ],
-  "enabled": false,
   "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "enabled": false
+    },
     {
       "matchFileNames": ["apps/laboratory/package.json"],
       "enabled": true,
