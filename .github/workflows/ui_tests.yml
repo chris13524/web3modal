@@ -58,7 +58,7 @@ jobs:
           repository: WalletConnect/web3modal
           ref: ${{ inputs.branch }}
       - name: setup-node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: 18.x
           cache: 'npm'
