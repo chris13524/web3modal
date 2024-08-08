@@ -9,8 +9,8 @@
   ],
   "packageRules": [
     {
-      "matchPackagePatterns": ["*"],
-      "enabled": false
+      "enabled": false,
+      "matchPackageNames": ["*"]
     },
     {
       "matchFileNames": ["apps/laboratory/package.json"],
@@ -21,9 +21,9 @@
         "@wagmi/connectors",
         "viem",
         "ethers",
-        "@solana/web3.js"
+        "@solana/web3.js",
+        "@web3modal/{/,}**"
       ],
-      "matchPackagePrefixes": ["@web3modal/"],
       "prPriority": 10
     }
   ]
